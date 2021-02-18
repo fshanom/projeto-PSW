@@ -39,50 +39,70 @@
     </nav>
 
     <div class="d-flex justify-content-center mt-4">
-        <p class="text-center text-capitalize fw-bold fs-1" style="width: 50%;">Criar conta</p>
+        <p class="text-center text-capitalize fw-bold fs-1" style="width: 50%;">Cadastrar anúncio</p>
     </div>
 
     <!-- Form -->
     <div class="col d-flex justify-content-center">
-        <div class="card" style="width: 50%;">
+        <div class="card mb-4" style="width: 50%;">
             <div class="card-body">
                 <form>
                     <div class="form-group">
-                        <label for="InputFirstName">Nome</label>
-                        <input type="text" class="form-control" placeholder="Nome">
+                        <label for="InputName">Nome do Animal</label>
+                        <input type="text" class="form-control" placeholder="Nome do Animal">
                     </div>
                     
                     <div class="form-group mt-2">
-                        <label for="InputLastName">Sobrenome</label>
-                        <input type="text" class="form-control" placeholder="Sobrenome">
+                        <label for="InputSpecies">Espécie</label>
+                        <input type="text" class="form-control" placeholder="Espécie">
                     </div>
 
                     <div class="form-group mt-2">
-                        <label for="InputEmail">Email</label>
-                        <input type="email" class="form-control" placeholder="Digite seu Email">
+                        <label for="InputRace">Raça</label>
+                        <input type="text" class="form-control" placeholder="Raça">
                     </div>
 
                     <div class="form-group mt-2">
-                        <label for="InputCPF">CPF</label>
-                        <input type="number" class="form-control" placeholder="CPF">
+                        <label for="InputAge">Idade</label>
+                        <input type="number" class="form-control" placeholder="Idade">
                     </div>
 
                     <div class="form-group mt-2">
-                        <label for="InputPhone">Telefone</label>
-                        <input type="number" class="form-control" placeholder="Telefone">
+                        <label for="validationTooltip03">Cidade</label>
+                        <input type="text" class="form-control" id="validationTooltip03" placeholder="Cidade" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
                     </div>
 
                     <div class="form-group mt-2">
-                        <label for="InputPassword1">Senha</label>
-                        <input type="password" class="form-control" placeholder="Senha">
+                        <label for="validationTooltip05">CEP</label>
+                        <input type="text" class="form-control" id="validationTooltip05" placeholder="CEP" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="validationTooltip04">Estado</label>
+                        <input type="text" class="form-control" id="validationTooltip04" placeholder="Estado" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid state.
+                        </div>
                     </div>
                     
-                    <div class="form-group mt-2">
-                        <label for="InputPassword2">Confirme sua Senha</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua Senha">
+                    <div class="form-group">
+                        <label for="InputDescription">Descrição</label>
+                        <textarea class="form-control" id="inputDescription" rows="3"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary mt-3">Criar conta</button>
+                    <label class="custom-file-label" for="validatedCustomFile">Foto</label>
+                    <div class="image-file">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <div class="invalid-feedback">Arquivo não válido</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Criar anúncio</button>
                 </form> 
             </div>
         </div>
