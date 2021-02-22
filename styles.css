@@ -1,5 +1,10 @@
 /* Alterações Gerais */
 
+.navbar-brand .img-fluid { 
+    height: 70px;
+    width:auto;
+}
+
 
 /* Template */
 
