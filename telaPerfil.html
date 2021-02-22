@@ -18,49 +18,54 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Paw Friends</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="telaPerfil.html">Sua conta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="criarAnuncio.html">Cadastrar anúncio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="index.html">Sair</a>
-                </li>
-            </ul>
-            <!-- Inserir search box aqui -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="template.html"><img src="img/logo.png" class="img-fluid" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-capitalize">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="telaPerfil.html">Sua conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Seus anúncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="template.html">Sair</a>
+                    </li>
+                </ul>
+                <!-- Inserir search box aqui -->
+            </div>
         </div>
     </nav>
 
     <!-- Conteudo da página -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row d-flex justify-content-center mt-4">
-            <p class="text-center text-capitalize fw-bold fs-1">Seu perfil</p>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <p class="text-center text-capitalize display-1">Seu perfil</p>
+            </div>
         </div>
-        <div class="card mb-3">
-            <div class="row">
-                <div class="col-12">
-                    <img class="card-img-top" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/user-300x300.png" alt="Card image cap">
-                </div>
-                <div class="col">
+        <div class="row d-flex justify-content-center mt-4 mb-5">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-10">
+                <div class="card mb-3">
+                    <img class="profile-img card-img-top" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExIWFRUXFxUXFRcWFhUVFRUVFRUYFxcXFRUYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHSUrLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tKy0tLSstLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABAEAABAwIDBQQGBwcEAwAAAAABAAIRAwQFEiEGMUFRcSJhgZEHE6GxwfAUIyQyM1LRFTRCYnKi8RaCkuFDRFP/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAmEQACAgIDAAAFBQAAAAAAAAAAAQIRAyESMUEEEyJRgTJhccHR/9oADAMBAAIRAxEAPwDq6CZZdsOgKezDmu6mecGgiDhzRoGAgjhCFghII4QhYwSCOEcIGEpQQhGsZBgoyko0BrDDkMySSgChQbYcokWYc0pEASCOEFgBBGggsECq8e/DKtFWY8Pqymh2B9GUsj95PWO9yYsjq5PWDu05LL0rHwGHu7b0wz8VydsPxHpgH653Rb0bwkygiQQMRMKzB06+avTcO5qGx7QnQ8LWw0ifbVjG9TrW5JMKuttymWkZkqk7DKKotkEcIJzmCQRoLGoJCEaCxqBCIoEqHiOI0qDC+o8NA5/ALBJZckGtHBctx70h1XkigMjNRmP3j4bgslX2zvAdK7p6yPI7knzYll8PNo65jm0bKZdqIacsGTLuPZ00EjXqFkn7fUw7tsdH8rWjoRBBPmsBcYlVqEue6XO1PDz81EqVzxG9K/iK/SUj8OvTtWD7XW9WAypDjuDoknofg5aO2xBs5Xdk8JBA8JC83TyP6rXbMbcVaMMqk1aW7talvSd47k0c6epCz+HrcTujXSjVHg+KU6jBUouzUzvEklvxHQq8aZEhO0c4EEqEIQMEq3HR9WVZwq7HB9UeiaH6gS6MZYnVyew49pyjYee05P4b99yMu2Uj0hVj+K5MH8c9E9ZH65yZf+OeiFb/AAN5+SVCNEggMUQqOnirDDLguflIIUFgSqWZrwZCOhbNsyhDdEKVTKZTVvUlgMpt9QwpS0x4u0X9O4BCeCrrVwyhWNPcnItBwhCUiWAJcYVPiG0NKmcsye5O7TXJp0HuBgwYXIru+ygucZJ36pZy4orixc276N7ebdU6bXOPDcOZ81ynH9pa17VJe6GTo0bgO4KDf3L6p13cAEm3oQJJ6Bc88raOqGGMXoau6pJyt4cyoxoneQtLs5srUuPrKhLWH7vN3fHJX1zsg2IaT88lzvKk6OpYZPZzsgjvKQbk8R4QP8rZ32y7wBpJ13cfBZ26wxzDqPmUymmJLG0QqQkaaePwTuu/jy3yFHc4tIhSnN7Mjhr0+fgmsSi02f2gq2z89J0fmbvY4ciPjvC7Zsnj9O5YHM0BmW8abxvae7WQeXJeey2e0PFXuyG0TrWsCZLHQKg5tnQj+Ybx5cVbHkrT6IZcfJWuz0UCgo2H3IqMa4EGQCCNxBGhHcVKhXZyBKvxsfVO6FWMKDjI+qd0KaD+pAktGBw49tyfwz8Ryj4f+I5PYcfrXKs1uQMb1EctPx3Jqr+8eCFs77S5NXVT7THcp2r/AAVrX5LBBIzIIWhqKRtQApz1jS4a8kxmJO5Ohxn7vLvWFNrYPaaY0SazBCTh1P6sQUdamYU59jw6JVsTAVzQ3BU9FnZCuaA0CrJ6I0LRFKhApAmL9IuJsp0crnakgRz8ui5De3vrTA3Ddofctp6Xakub3ZSPHNOnSNVzqkDBMxy36qGd7o6/h4/TZJbTaOHw9yvtl8AfcvD3CKTT/wAjyHclbF4AK81H/dBjqV020oNYA1oAA0AC4py8PQhD0O2sQAABAGgS6tpCm0E5VdKmoofm7KevbyFnMVwUPB0WtrkKDWah0OnZzXE9m41CztRuTQ8fn4LqmKUpaVy7HXfWHrCrjk3ojlgkrRBYMrjy/VOVCNDwOnQomjTz9nyPJJOrD4eaujlaOteiLHy4G0eZLRmpEnUtnVvgdeh7l1ALzRsriZoV6VWfuOBP9J0P6r0rbvDmhw3EA+a6YSuJx5Y1L+RahYuPq3dCp0JF3RBYZ5FOpU7JuNqjmNj+K5PWA+ucnjTy1nBRcO/HdKtKSdiQjSX8h0f3o9ExfM+1A9xT3/t+CRin7w3xUvS3+k1BNoLBKZlF071JbTIcJdyUd1aHBO1XtJHA6cSEwhsrAjKITtVum9QcHMNCn1nCFPJ2PDolW1SQFa0NyzlCrpotFZ/dCdqkTHUmqdEsqtxTEmMpvcT91pJ8B70qAcV9JWKZ7ioBubDf90a++FjpcG67zo0d50UvE6zqlZznDUucSP5iZPtVpsnhnrrlkiQztu/27v7o9q48krbZ6WOOkjo2z9Bltb02OIBAE8y46u06qzt8WolwBdHDUEf4TNetSpnM4Au6Anw5BRa2KWlUFrsk9zmZh3iHSuZNM7KNQyCJBkcxqm6nNZTD6TmmaNYuYDund3EHctHb1i5uo6raBQT9SotwpRqiSmagBQoZaKO/doVyzHmfWO+dQusYjR0K5ntNbw8n510Rx6Zsm4lNYPklh8Om74pkAglp5e0fJRUDDwfA/qlmoC4zuk+9dBxsRa1IPT3L0X6NL41rGnmMuZNM68Gns/2lq841GZXAzofcu0+hm8OV7P4TB6OGhHdpl/4q0HshkjaOrNp6Jm8HYPQpwVE1dO7B6Jiejm7yfXuUaydFw5P1T9ocotq77SV0P+iC/sXUP2sdEjFNbhnijr/vbeibxWpFyzxS+j+fkmwgjlBYYo6madycc94I7Kaqb/vJVQO0hwRENDgt6ToRCuKu5ZTD7gsMkhO4hirj9xwCnK2zRyRS7L+pcNYACYlX2H37C0doea5niFN9YDM+I5FNUrHKDNV3/IqnJVsm5Lw6xdXrMhOYblyfE8QcPWy4lpdrPFodmIHflBHiqx965pLQ9xH9RMqBjl1maxnfJ71Kc0lo6MUG3bKGtoC86F0noDvPU6wt76LbT6uo+O0XAHwEx7QPBc5xK51PIR4n5967B6ObXJaz+d7j4ABvvaVwz6PSxrZMxXCG1NHjMDwWZ2swR1QNgAANa0gNAzNa7O06bjO+N66HdUpbuVURPZKmm49F3HmtmZ2YtH03QHOIiDm4nu7uq3FBwDZPJQ6Vuxv3RqVHxW4cxhiOPl3IXsLV6RBxLFQ1xAOpVLdOe4w2sQ7kCZ/tVYHl75Oqureya2lUkuJc1waQS3I5w0Ja0w6Dx3pq2B9DJt7yIFdh03Okn3SsntF60T61gj8zdQl1BcAvcapGpIZmzNHJrQSSAOcyo7799RsO1+eKaqJXeigcNQ4eKj7jIUquQ05fJRqjY181VEJIkggtgjT3ciul+iOsWlw4dkD+rN+gK5cx/tW59H2NtolzHfxEOae9useXxHFUg6ZKatHf6QMIXTDkPRO0HyARuKOueyU97I0cqq1ALlw4qJTH2pPYgR9MMJo/vAV0Q/0Ou77W3p8Qk426Lin4o7t0XTOnxCLHp9fT6/Bb0fwsJQSZQQGM/dZQUzWrNEbxpzWqwrBWO1qOCY2jwRjW5qbt3DeCtyQvBmYc0u1DjCJtqfzFTcPcMhLhEJ+2rU3NLhwSNg+VEhta7dJQ9Q53ZkyVMtLym+Y4JqhirM+7duQdjLHEz15auY8gqsxRxnoPh/lXWM3odU3KixQyCfncY9yhkfh140UNfXT53LvWxYDbSiB+XWd+aTmnvmVwuhRL6rWjWTHlqfYCu1bCVw6zbH8Lnt/uJHsIUJ9HRj9NRUuQBqq6i8OdIExvVd9Dc97nVXOLA45WtMANGkkfxSQVeWzmhoyxljSIiO5S5WdHQzUfroFRbTvIp6/MrRvOQZj2gPYsftViTHDLOp5cOqKQUylw9suEcFraNAlqx+GvDKrY1HErfWj25UZGM/iOEB0y4jwCzd7hbKW7VbnEHAArH4vWkFaIsjnuOnt+1IZVkJvEq2ao6N24I2U9D4Lo8OJvYp3cpVpXg74Kg8Uqm/We9EB6m2PxH1tpRcPyAeQj4K3uH9krh+zu2FajRDGxo72QNPYtZZbemqRT9WQTxkK6qrOZ3dFVeu+1lCq/7Q0K1dhQdU9ZOqj3eFxVa+UyyxbEeOVEG/8A3mn0/RJ2in11Ijn8EeJg/SKZ6o9omTUpnvHuTgfpLQRQggMQ6OZ7dHHRRalRwa7U8eJT2E3lMuDQdTHFaWhsg58l2jSNw3yVzqaZdxaMnhGH1alF+UTvVfg1JwFRp0IJBC6lhWDPt6TmtGY6x4lZilsrdZqry0S8kwDzTcidHOH13tLgDGpR2VeCDvWpp7B3ZqS5gyyZ1We2mwt9vWyEFoIBTc14ZIi39cE5lEriWdTPwhM1Haidw9/NSGvlsKGRN7OjG0tFOwEOzDeCui+i7FgXVKB0LvrG8iRDX+zJ5LDGl2u7j8+YT2H3jra5p1G72OmObY7QPUE+ak9osnR3dzNZVa+gaTyWfdcZLeE8SBzVhY3LKrG1GGWvaHNPMESEutSkR8hRReMqIX7UERv5jj5FU2KW9u7UANJ36Qp+IOnRzGmOPH2rO4u0HQNd/wAiAPamorxjVkWq6nT1zDTopmF4m5wlgLm8+H+3mqZlhTmXNBjnrr4rSWL2sp5iIHAISETIuK3bgcqzWL1SGHmdB1KvbpxcTVfvMwOQXOtq8Q9Y4sadG7+93Lw+KeCsnklSKetOeDwVnYaiD18tBKq7dvab4KwpnLKszmQm5aI05pmkFKiWkcR8/BN0qfvW8B6bjZjCRWpAkxr7lpLLA203BwOoVBspiIp0ssfMlaBuMjg1VirRCbqXRbfTSCAtHRw0VGhxKwLsSJP3FNq7Y1WsDWsII48EHj+wFP7mjvdlM72vzkZeiO72U9aWkuIjkqSl6QQGgOac3HRWuGba03iSCPBa5hqJK/0t/MUad/1XSQQ5SDUTkuzI+0U/6h712u/vHsFPKJkgHouJYFUy1mE8CD7V223xigWiXt3cwpPsvkRcUnaCUayGJbUNFZrWuGXWevBXIrudBnsprI0PYjdljmgCZIBXKvS5Tc+4oADVzXDxkLqTrumDrwWfxXDadxcsqO/8YMdT/ha6ZjiOL4XUoECoIzCQotJxG5dw2o2VpXeUEkFu4jeuV7W4ILOqGMcTInvEFWjNSVCtVsqn1Gx2tOvz7VGurZ0kzrGh5j9U/SfrqAfBb7ZfDqNWic7A7qBoufKuGy8cieiz2DuR9EojkwDyC1IMrPYVhYp/c7LZOnCJVq6oWDXdz5dVznUhN3TB4KgxKi0K2uL9sbwszfXuYrFCG4DNqpdauI6KuzGZTNZ5KIpXbUYu5rCGmCdJ5dO9YSnB39VpsftqlQEU2ueRqQ0FxiQCQBrxCy9F8HpvB7jxXRBaOXLL6h92kRrBBVtcUZ7Q3HVV4oneAQDw5DuPHgrO0rfwRuEjvneFpAiNeoMSP8/9o6bdeXMKQHAbv++kJJifgULGovsALdWkwYkd/ctPZAerJ4hYKlU4eR3QrvD6lxIDQ0j8ziHQO7WB5KkZUqJTjuzQW1wS4AhPYhTA3BJtiGloJknin75wG9VImauKcuWjwiz+r3exV7qzcw0Wtwm/pinuU5yf2Hir9K/6N/L7EFd/tCn+X2IKXJ/YfivucaZdkHRW1o1z4lxCrBRYrG2umtEFW+mwPlRIq0slRoD51C7BZE+qb0XE/WjNmC2Nv6Sbe3ogVQ+pU/IwDwzOJAHvSSVvRtpbNJcVnGplgqVaUX5ieS5fifpbqv8Aw7Wmw8C5znkd5gALHVNqb0hzfpVbLUdmcA9w7R5cQO4aIrGK5M9D1K7wRpxhcz9JNu99ZjmscZaRoCdZ3aLR7JbRVLq3a9zgHDsugCZbpJnWVfsozqTJ71L5ihIssTktnJMO2Uu6kH1eQc6hy/26u9i6Ds9gzqFPK5wJ4wIC0TaIQNNJkyuapjxwxiMU2wnHN0Qy6pwqaKlDiOFMdrEdNFQXGGkbltKwlQa1sCsMmYupbkb1DuGla66shyVHe23JaxzMNvalCq2rScWvbMHmCIIPMEFbHB8apV6Tw5jC8jtgtbmOkHh2hvWffhhdwlNjB6gILWwZ35t3krQyJEMmLlsh4hhtFs5MzdTDAezPdOoHjuVZcYY8GYPORwK1NPD3TLzLuZ3f9I6lFwMEKqSltHO+UNNGZ9ROpEHmNxSjTaREQe7j4cFoalIRuTbcOZvy/p5IcGH5iZnBaVCYjTnrotBh2Gua0EudHIaDyUptsB/DuUxjuwio/cRzb6E0nukFSMSqODQ5RfWKVfumkFS9kylqXZB3LV7NXk09Qsr9Ec/7rSY5LT7LUuxB3oT6NEu/pbfyoJz1YQUihyZ9Epm6YdISxe6wouL3ZDco3u9yt6DpPZAur8gFrD1I49FW1BxPEn2R+qc5JD2bvFaxRtG5EjWAdB9El4DUqUSQMzQ9snUkaEDwXTu0zovPmD4g63rU6zRLqbg4DnzHiJXo2zqMrU2VGkFr2hwI1EESubLHdnXhncaBRuQVJCg1bPklUMw0KiW4/YlOaiITlMynDTWF6IDmpt4U51FRqlNZjIrrhkqBUsp4K8NFJ9UEAplLTsByUqnhoU/KEYqLUGytq4U0qDXwyBG8LQucs1tZtTRs2w7t1T92kDr1cf4W+/gnjd6Ek1X1FPe4TUbJEuby/iH6qLSqkQOAWNxraq5uHOJeabDupsJa0DvI1cec+SrLa+qMMtcQevvXbG62cE+N6OluutCISKTYplZ3DtpmO0qgN/mEkeI4KzuLgzA3dyZoVMcAI4rSNwt1akA0hZKmxx14KytMXq0j2HS3kslvYG9aNZhl7Qth6t7Rm46Kxs2U6j81PSe6FgL67dVdnIgq6wvE30GgkSP1Re9GRvP2WOaCy/8Aqd35SglpBOX/AEMTMqixCvmeTw3DwV1dXAaxx4xp1OizZWGbXgCkvCEoQgAQUqdEIQCxgLo3oo2o9W8WdSPVvLjTcdC151ynhBgx39VzkFGChJWqGjLi7PUxCT6oLB+jnbf6Q31FdwFZoAaTp60Dj/VzHiugBcklWjsjK1aENZCdBSSiCUIbyor2lSSkuC1BWiDUBTPqyrBzUktWobkQhQKdZSAVJj22VpatOaoKj+FOmQ556j+Ed5hcv2n27ubrM1hNGidCxpkuH8z4nwEDqqRxtk55UjX7Y+kJlH6q0LKjzOap95lPhoNznb+MDv3Lk1es57nPcS5ziS4nUkneSkkol0Rio9HJObk9hIwNPcjb7EuO7VNYtDUrRbJY62jUDawzUnEAz/45P3h3cwqB4801mRTA0egaWGUo0aIOukRBSqWA0pnKPJYH0bbUZGut6pJjtUyeDeLfiOpW4G0lNJknLpIaEI9sVjloxtJxDNw5LBnEHlu4wF0AYuyq0iNOiyOIMcczadORrqAjCTemgTil0ys/azkFG/ZVf/5ORp6Esp9oXZcrCIO89OHxVErHHrjPWceUN8vkqtlAawNKDUQ/VGsYA3o0mEYKBgEIkoIgNVggpVC0hwJBBkEbwRqCF2LYv0k06gFO7IpvEAVNzH9fyH2LkBam5SyipDRm4nqdtVpAIIIO4ggg9DxSoXlltU6anTUQSIPMcipdTGLlxE3FYkbpq1NOna03KXyf3K/O/Y9K1rhjdHOAndJAmOUrO4ltzYUZBuGvcP4ac1DPKWiB4lcDr1XPMvJcebiXHzKbzIrEvQPO/EdVxX0stj7NbuJ4urEADo1hM+JCxmL7aXtdxca7qYIjJSc5jQPAyepWdQVFBInLJJhyiJRFFKYQNGElLBhYwsN8gjnmNeH/AEmQ5LzEd/wQCE/28U04JT5lIcUUZj9hcmlUa8cD7DofYtg6s7gVh1sdn2+tog5xLeyQd/d7EyFZZWV68A6lbjZVzSztDVYkWmUTmC0GB4qxuhcEsm4vSFcjX9j8oRqp/bFH84QRti8kcMun5nOPMk+1RynHpsbwiUF7gkpb0hAwQTmb3JAQKAwpru5CUkBAu0QMHIRORBG0omEpQCUAhK1moEBEURCErGFSiSUFjARIEo1gARFBw0SAsYUnJTIOqXKwQ54JDkZRFYARVzsxXh5YZ7Y0jm2T7pVMU7ZXJpvbUB1aZ/UeUpkBm+tA9xy5NO9FUt3scdIUn6WWu7KFS5nUpnEi2Q/WOQTmdBPxRIwj0inv80EFI6xdT4fom+KNBAwEbkEEAiCicggsYUdyNiNBYItu5JcgggYSeKQggiAMIkEFjA+falhBBYwVTd4BNt4IkFjA4+fwTrEEFjCUhBBYwAi4oIIox0S1/Dp/0N9yD0EFY5WIQQQTkz//2Q==" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title ">Usuário: </h5>
-                        <h5 class="card-title mt-2">Email: </h5>
-                        <h5 class="card-title mt-2">Telefone: </h5>
-                        <h5 class="card-title mt-2">Meus anúncios: </h5>
-
-                        <a href="#" class="btn btn-primary">Editar Perfil</a>
+                        <h5 class="card-title ">Usuário: usuario_teste</h5>
+                        <h5 class="card-title mt-2">Email: usu@email.com</h5>
+                        <h5 class="card-title mt-2">Telefone: (21) 9 1234-5678</h5>
+                        <h5 class="card-title mt-2">CEP: 123456-78</h5>
+                        <h5 class="card-title mt-2">Endereço: Rua Teste da Silva 45</h5>
+                        <div class="container mt-3 text-center">
+                            <a href="#" class="btn btn-outline-dark">Editar Perfil</a>
+                            <a href="#" class="btn btn-outline-dark">Alterar Senha</a>    
+                        </div>
                     </div>
                 </div>
             </div>

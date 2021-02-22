@@ -17,6 +17,19 @@
     object-fit: cover;
 }
 
-.card-anuncio{
+.container-fluid.container-cards{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
+.btn.btn-outline-dark.btn-adocao{
+    align-items:center;
+}
+
+/* Perfil do usuario */
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

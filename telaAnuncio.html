@@ -18,53 +18,58 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Paw Friends</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="telaPerfil.html">Sua conta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="criarAnuncio.html">Cadastrar anúncio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="index.html">Sair</a>
-                </li>
-            </ul>
-            <!-- Inserir search box aqui -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-capitalize">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="telaPerfil.html">Sua conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Seus anúncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="template.html">Sair</a>
+                    </li>
+                </ul>
+                <!-- Inserir search box aqui -->
+            </div>
         </div>
     </nav>
 
     <!-- Conteudo da página -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row d-flex justify-content-center mt-4">
-            <p class="text-center text-capitalize fw-bold fs-1">Max</p>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <p class="text-center text-capitalize display-1">Max</p>
+            </div>
         </div>
-        <div class="card mb-3">
-            <div class="row">
-                <div class="col-12">
+        <div class="row d-flex justify-content-center mt-4 mb-5">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-10">
+                <div class="card mb-3">
                     <img class="card-img-top" src="https://image.winudf.com/v2/image/Y29tLnRodW5rYWJsZS5hbmRyb2lkLmV6Z2luNTYuRG9nX1NvdW5kX3NjcmVlbl8wXzE1MjA0OTU1ODhfMDgx/screen-0.jpg?fakeurl=1&type=.jpg" alt="Card image cap">
-                </div>
-                <div class="col">
                     <div class="card-body">
                         <h5 class="card-title ">Idade: 5</h5>
                         <h5 class="card-title mt-2">Raça: Samoyed</h5>
                         <h5 class="card-title mt-2">Sexo: Macho</h5>
                         <h5 class="card-title mt-2">Espécie: Spitz</h5>
                         <h5 class="card-title mt-2">Temperamento: Amigável, Calmo e Inteligente</h5>
-
                         <h5 class="card-title">Descrição: </h5>
-                        <p class="card-text">ts the undiscover'd comethe wish'd. To dream: ay, that pale calamity of outly takes of outrageousand the hue of grunt a sea of die, or no morthy to dream: ay, and scorns, puzzlesh is and naturn awry, that flesh is question is more; and the law's come wills be what that there's the haveller retus more; fortune, or not the wish'd. Thers the thance the question is rath, those bodkin? Who would by a sleep; to take calamity of? Thers tural shuffled of trageous and arrows of regards of ther 'tis man's cal</p>
+                        <p class="card-text">Ts the undiscover'd comethe wish'd. To dream: ay, that pale calamity of outly takes of outrageousand the hue of grunt a sea of die, or no morthy to dream: ay, and scorns, puzzlesh is and naturn awry, that flesh is question is more; and the law's come wills be what that there's the haveller retus more; fortune, or not the wish'd. Thers the thance the question is rath, those bodkin? Who would by a sleep; to take calamity of? Thers tural shuffled of trageous and arrows of regards of ther 'tis man's cal</p>
                         <p class="card-text"><small class="text-muted">Postado no dia xx/xx/xxxx em Cidade, Estado por usuario</small></p>
-                        <a href="#" class="btn btn-primary">Adotar</a>
+                        <div class="row text-center justify-content-center">
+                            <div class="col-lg-6 col-md-8 col-sm-10 col-10">
+                                <a href="#" class="btn btn-outline-dark btn-adocao">Adotar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
