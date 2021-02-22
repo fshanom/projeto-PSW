@@ -1,3 +1,18 @@
+/* Alterações Gerais */
+
+
+/* Template */
+
+.navbar {
+    position: relative;
+}
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+
 .card-img-top {
     object-fit: cover;
 }
