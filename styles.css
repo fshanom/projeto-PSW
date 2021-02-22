@@ -4,15 +4,19 @@
     height: 70px;
     width:auto;
 }
-
-
-/* Template */
-
 .navbar-toggler {
     position: relative;
     align-items: flex-end;
 }
 
+/* Cards anuncios */
+
 .card-img-top {
+    width: 100%;
+    height: 80%;
     object-fit: cover;
+}
+
+.card-anuncio{
+
 }

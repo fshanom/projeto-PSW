@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/styles.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
 
     <title>Paw Friends</title>
 </head>
@@ -18,93 +19,76 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Paw Friends</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="telaPerfil.html">Sua conta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="criarAnuncio.html">Cadastrar anúncio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="index.html">Sair</a>
-                </li>
-            </ul>
-            <!-- Inserir search box aqui -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="template.html"><img src="img/logo.png" class="img-fluid" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-capitalize">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="template.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="telaPerfil.html">Sua conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Seus anúncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="template.html">Sair</a>
+                    </li>
+                </ul>
+                <!-- Inserir search box aqui -->
+            </div>
         </div>
     </nav>
 
     <!-- Conteudo da página -->
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row d-flex justify-content-center mt-4">
-            <p class="text-center text-capitalize fw-bold fs-1">Animais para adoção</p>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <p class="text-center text-capitalize display-1">Animais para adoção</p>
+            </div>
         </div>
 
-        <div class="row d-flex justify-content-center mt-4">
-            <div class="col">
-                <div class="card mb-3">
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="card-img-top" src="https://image.winudf.com/v2/image/Y29tLnRodW5rYWJsZS5hbmRyb2lkLmV6Z2luNTYuRG9nX1NvdW5kX3NjcmVlbl8wXzE1MjA0OTU1ODhfMDgx/screen-0.jpg?fakeurl=1&type=.jpg" alt="Card image cap">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Max, 5 anos.</h5>
-                                <p class="card-text">Cras viverra vestibulum tellus, at interdum dolor tempus ut. Ut egestas orci non auctor gravida.</p>
-                                <p class="card-text"><small class="text-muted">Postado no dia xx/xx/xxxx em Cidade, Estado</small></p>
-                                <a href="telaAnuncio.html" class="btn btn-primary">Adotar</a>
-                            </div>
-                        </div>
+        <!--Anuncios-->
+        <div class="row d-flex justify-content-center mb-5">
+            <div class="col-10 col-sm-6 col-md-4 col-lg-4 mt-4 d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" src="https://image.winudf.com/v2/image/Y29tLnRodW5rYWJsZS5hbmRyb2lkLmV6Z2luNTYuRG9nX1NvdW5kX3NjcmVlbl8wXzE1MjA0OTU1ODhfMDgx/screen-0.jpg?fakeurl=1&type=.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Max</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="telaAnuncio.html" class="btn btn-outline-dark text-capitalize">Mais informações</a>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="row d-flex justify-content-center mt-4">
-            <div class="col">
-                <div class="card mb-3">
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="card-img-top" src="https://www.diariodoaco.com.br/images/noticias/81811/20200905092327_NMibn3mO2Q.jpg" alt="Card image cap">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Bituca, 6 anos.</h5>
-                                <p class="card-text">Donec a molestie eros, id iaculis augue. Morbi sed felis eu massa molestie semper. Integer viverra mauris sed augue auctor, a feugiat metus sagittis. </p>
-                                <p class="card-text"><small class="text-muted">Postado no dia xx/xx/xxxx em Cidade, Estado</small></p>
-                                <a href="#" class="btn btn-primary">Adotar</a>
-                            </div>
-                        </div>
+
+            <div class="col-10 col-sm-6 col-md-4 col-lg-4 mt-4 d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.diariodoaco.com.br/images/noticias/81811/20200905092327_NMibn3mO2Q.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bituca</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-dark text-capitalize">Mais informações</a>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="row d-flex justify-content-center mt-4">
-            <div class="col">
-                <div class="card mb-3">
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="card-img-top" src="http://1.bp.blogspot.com/-6kUUgD_SRrY/UCEg0GrOb7I/AAAAAAAACD0/_R7GWPjfzSc/s1600/guiga.jpg" alt="Card image cap">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Mia, 2 anos.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate dignissim mi quis consectetur. Phasellus gravida nec dolor sit amet consequat. Maecenas vulputate elementum fringilla.</p>
-                                <p class="card-text"><small class="text-muted">Postado no dia xx/xx/xxxx em Cidade, Estado</small></p>
-                                <a href="#" class="btn btn-primary">Adotar</a>
-                            </div>
-                        </div>
+            
+            <div class="col-10 col-sm-6 col-md-4 col-lg-4 mt-4 d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" src="https://i2-prod.mirror.co.uk/incoming/article21142078.ece/ALTERNATES/s615/0_Stray-Cat.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mia</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-dark text-capitalize">Mais informações</a>
                     </div>
                 </div>
             </div>
