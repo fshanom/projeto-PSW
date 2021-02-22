@@ -16,42 +16,50 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Paw Friends</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Paw Friends</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="telaPerfil.html">Sua conta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="index.html">Sair</a>
-                </li>
-            </ul>
-            <!-- Inserir search box aqui -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-capitalize">
+                    <li class="nav-item">
+                        <a class="nav-link" href="template.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="criarPerfil.html">Criar conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Ver anúncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Entrar</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!--Conteudo da pagina-->
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row d-flex justify-content-center mt-4">
-            <p class="text-center text-capitalize fw-bold fs-1">Esqueceu sua senha?</p>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <p class="text-center text-capitalize display-1">Esqueceu sua senha?</p>
+            </div>
         </div>
     
         <div class="row d-flex justify-content-center">
-            <p class="text-center">Uma nova senha será enviada para o seu email.</p>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <p class="text-center display-6">Uma nova senha será enviada para o seu email.</p>
+            </div>
         </div>
     
-        <!-- Login Form -->
+        <!-- Form -->
         <div class="row d-flex justify-content-center mt-4">
-            <div class="col">
+            <div class="col-lg-4 col-md-8 col-sm-12">
                 <div class="card">
                     <div class="card-body">
                         <form>
@@ -63,7 +71,7 @@
                                 <label for="InputEmail1">Confirme Seu Email</label>
                                 <input type="email" class="form-control text-capitalize" placeholder="Confirme seu Email">
                             </div>
-                            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            <button type="submit" class="btn btn-outline-dark mt-3">Enviar</button>
                         </form> 
                     </div>
                 </div>
